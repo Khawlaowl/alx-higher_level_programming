@@ -1,11 +1,10 @@
-#!/usr/bin/python3
-last_digit = abs(number) % 10
-
-if last_digit > 5:
-    result = "and is greater than 5"
-elif last_digit == 0:
-    result = "and is 0"
+if number < 0:
+    last = number % -10
 else:
-    result = "and is less than 6 and not 0"
-
-print(f"Last digit of {number} is {last_digit} {result}")
+    last = number % 10
+if last > 5:
+    print("Last digit of {} is {}".format(number, last) + str1)
+elif last == 0:
+    print("Last digit of {} is {}".format(number, last) + str2)
+else:
+    print("Last digit of {} is {}".format(number, last) + str3)
