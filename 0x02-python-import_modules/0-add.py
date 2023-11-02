@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 # Define variables a and b
 a = 1
 b = 2
