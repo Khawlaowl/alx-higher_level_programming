@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-# Print the number
-print(str(chr(65) + chr(66) + chr(67) + chr(68) + chr(69) + chr(70) + chr(71) + chr(72) + chr(73) + chr(74) + chr(75) + chr(76) + chr(77) + chr(78) + chr(79) + chr(80) + chr(81) + chr(82) + chr(83) + chr(84) + chr(85) + chr(86) + chr(87) + chr(88) + chr(89) + chr(90)))
+print(u"\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4A\x4B\x4C\x4D\x4E\x4F", end='')
+print(u"\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5A")
