@@ -117,14 +117,13 @@ def coordinate_format(candidates):
 
     """
     holberton = []
-    for x, attempt in enumerate(candidates):
-        holberton.append([])
+    for attempt in candidates:
+        solution = []
         for i, row in enumerate(attempt):
-            holberton[x].append([])
             for j, col in enumerate(row):
                 if col:
-                    holberton[x][i].append(i)
-                    holberton[x][i].append(j)
+                    solution.append([i, j])
+        holberton.append(solution)
     return holberton
 
 # init candidates list with first column of 0s
@@ -155,5 +154,10 @@ for col in range(N):
     candidates = new_candidates
 
 # format results to match assignment output
-for item in coordinate_format(candidates):
-    print(item)
+solutions = coordinate_format(candidates)
+
+if not solutions:
+    print("No solutions found.")
+else:
+    for item in solutions:
+        print(item)
