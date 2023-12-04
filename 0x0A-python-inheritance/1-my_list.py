@@ -1,11 +1,16 @@
 #!/usr/bin/python3
-'''1-my_list.py
-'''
+"""
+subclass from List base class
+"""
 
 
 class MyList(list):
-    ''' This class inherits from list() '''
+    """a subclass of list base class"""
+    def __init__(self):
+        """object constructor"""
+        super().__init__()
+        """Access the methods of the Base class"""
 
     def print_sorted(self):
-        """ prints the sorted list """
+        """print_sorted method"""
         print(sorted(self))
