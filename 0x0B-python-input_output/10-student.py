@@ -1,4 +1,7 @@
-ontains a Student class and some methods.
+#!/usr/bin/python3
+"""Student module.
+
+Contains a Student class and some methods.
 """
 
 
