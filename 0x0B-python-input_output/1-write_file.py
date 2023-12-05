@@ -1,4 +1,7 @@
-ontains a function that writes a text file.
+#!/usr/bin/python3
+"""write_file module.
+
+Contains a function that writes a text file.
 """
 
 
