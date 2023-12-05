@@ -1,4 +1,5 @@
-d_file module.
+#!/usr/bin/python3
+"""read_file module.
 
 Contains a function that reads a text file.
 """
