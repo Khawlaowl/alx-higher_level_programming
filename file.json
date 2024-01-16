@@ -1,0 +1,50 @@
+{
+    "State.bf43753f-cb38-4e60-8d0b-c78c073f12c5": {
+        "id": "bf43753f-cb38-4e60-8d0b-c78c073f12c5",
+        "created_at": "2024-01-16T14:19:10.782459",
+        "updated_at": "2024-01-16T14:19:10.782465",
+        "__class__": "State"
+    },
+    "Amenity.76dc912a-df7d-4247-8a38-780070a05869": {
+        "id": "76dc912a-df7d-4247-8a38-780070a05869",
+        "created_at": "2024-01-16T14:19:10.784631",
+        "updated_at": "2024-01-16T14:19:10.784635",
+        "__class__": "Amenity"
+    },
+    "Amenity.9ea79903-de61-4e6e-85ab-0f7378eed330": {
+        "id": "9ea79903-de61-4e6e-85ab-0f7378eed330",
+        "created_at": "2024-01-16T14:19:10.784674",
+        "updated_at": "2024-01-16T14:19:10.784675",
+        "__class__": "Amenity"
+    },
+    "Amenity.aa744301-bb73-42d2-8446-4c3511ed1692": {
+        "id": "aa744301-bb73-42d2-8446-4c3511ed1692",
+        "created_at": "2024-01-16T14:19:10.784704",
+        "updated_at": "2024-01-16T14:19:10.784705",
+        "__class__": "Amenity"
+    },
+    "Amenity.57de1c03-d624-45d0-8f06-cd5e4551f336": {
+        "id": "57de1c03-d624-45d0-8f06-cd5e4551f336",
+        "created_at": "2024-01-16T14:19:10.784831",
+        "updated_at": "2024-01-16T14:19:10.784833",
+        "__class__": "Amenity"
+    },
+    "Amenity.b09b4c05-48e1-4210-b1d6-fcb491dbdf70": {
+        "id": "b09b4c05-48e1-4210-b1d6-fcb491dbdf70",
+        "created_at": "2024-01-16T14:19:10.784919",
+        "updated_at": "2024-01-16T14:19:10.784921",
+        "__class__": "Amenity"
+    },
+    "BaseModel.3bb24f82-61ab-4ff7-b60c-19b9635ec86f": {
+        "id": "3bb24f82-61ab-4ff7-b60c-19b9635ec86f",
+        "created_at": "2024-01-16T14:19:10.785099",
+        "updated_at": "2024-01-16T14:19:10.785101",
+        "__class__": "BaseModel"
+    },
+    "BaseModel.fb11c7bf-a97b-4907-9d65-f69ed947ac46": {
+        "id": "fb11c7bf-a97b-4907-9d65-f69ed947ac46",
+        "created_at": "2024-01-16T14:19:10.785198",
+        "updated_at": "2024-01-16T14:19:10.785204",
+        "__class__": "BaseModel"
+    }
+}
