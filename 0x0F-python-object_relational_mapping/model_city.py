@@ -1,24 +1,22 @@
 #!/usr/bin/python3
-"""This is the City module.
+"""List all states"""
+from sys import argv
+from model_state import Base, State
+from model_city import City
+from sqlalchemy import (create_engine)
+from sqlalchemy.orm import sessionmaker
 
-Contains the City class that inherits from Base = declarative_base()
-"""
-from sqlalchemy import Column, Integer, String
-from sqlalchemy.sql.schema import ForeignKey
-from model_state import Base
-
-
-class City(Base):
-    """This class links to the `cities` table of our database.
-
-    Attributes:
-        id (int): id of the city.
-        name (str): name of the city.
-        state_id (int): id of the associated state.
-    """
-
-    __tablename__ = 'cities'
-
-    id = Column(Integer, autoincrement=True, nullable=False, primary_key=True)
-    name = Column(String(128), nullable=False)
-    state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
+if __name__ == "__main__":
+    engine = create_engine(
+        'mysql+mysqldb://{}:{}@localhost:3306/{}'
+        .format(argv[1], argv[2],
+                argv[3]), pool_pre_ping=True)
+    Base.metadata.create_all(engine)
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    results = session.query(City, State).\
+        filter(City.state_id == State.id).all()
+    for city, state in results:
+        print("{}: ({}) {}".format(state.name, city.id, city.name))
+    session.commit()
+    session.close()
