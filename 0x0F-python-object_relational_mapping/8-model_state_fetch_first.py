@@ -8,11 +8,10 @@ Arguments:
     database name (str)
 """
 
-import sys
-from sqlalchemy import (create_engine)
-from sqlalchemy.orm import Session
-from sqlalchemy.engine.url import URL
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
+from sqlalchemy.engine.url import URL
 
 
 if __name__ == "__main__":
